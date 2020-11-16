@@ -13,11 +13,12 @@
         android:layout_height="wrap_content"
         android:src="@drawable/logo_title" />
 
-    < android:id="@+id/sign_layout"
+    <androidx.appcompat.widget.LinearLayoutCompat android:id="@+id/sign_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical">
+        android:orientation="vertical"
+    >
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -31,7 +32,6 @@
                 android:layout_height="wrap_content"
                 android:text="@string/email" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
         <EditText
             android:layout_width="match_parent"
@@ -67,6 +67,6 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="80dp" />
-    </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </RelativeLayout>
